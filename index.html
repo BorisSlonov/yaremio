@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Yaremio</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        font-family: "Roboto Slab", serif;
+      }
+      main {
+        position: relative;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(img/bg.jpg);
+        background-color: rgba(0, 0, 0, 0.767);
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+      main::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.582);
+      }
+      .container {
+        max-width: 1270px;
+        margin: 0 auto;
+        padding: 10vh 15px 15px;
+      }
+
+      .flex-container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+      }
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 80px;
+        letter-spacing: 1px;
+        margin: auto;
+      }
+      .logo {
+        background-image: url(img/logo.svg);
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        fill: #fff !important;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-top: auto;
+        color: #fff;
+        font-size: 16px;
+      }
+      .info a {
+        color: #fff;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .info {
+          margin-left: 0;
+          font-size: 14px;
+        }
+        h1 {
+          font-size: 46px;
+        }
+      }
+      @media (max-width: 550px) {
+        h1 {
+          font-size: 32px;
+        }
+        .info {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container flex-container">
+        <div class="logo"></div>
+        <h1>Сайт находится в разработке</h1>
+        <div class="info">
+          <span>ООО «Интер-Час»</span>
+
+          <span style="margin-top: 20px"
+            >117342 г.Москва, ул.Введенского, д.3, стр.7</span
+          >
+
+          <a href="tel:+7(495)580-61-69">+7(495)580-61-69</a>
+
+          <a href="tel:+7(985)760-10-28">+7(985)760-10-28</a>
+
+          <a href="mailto:info@inter-chas.ru">info@inter-chas.ru</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
